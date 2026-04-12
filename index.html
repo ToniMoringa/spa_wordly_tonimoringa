@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Lexicon | Modern Dictionary with Theme Toggle</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Favicon  -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23120D31'/%3E%3Cpath d='M32 28 L68 28 L68 72 L50 60 L32 72 Z' fill='%239B6A6C' stroke='%23F5EDF0' stroke-width='2.5'/%3E%3Ctext x='50' y='58' font-size='32' text-anchor='middle' fill='%23F5EDF0' font-weight='bold' font-family='system-ui'%3EL%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <!-- Theme Toggle  -->
+      <div class="theme-toggle-wrapper">
+        <button
+          type="button"
+          class="theme-toggle-btn"
+          id="themeToggleBtn"
+          aria-label="Switch dark/light mode"
+        >
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+      </div>
+      <div class="app-container">
+        <div class="hero">
+          <h1>English <span>Lexicon</span></h1>
+          <div class="sub">
+            <i class="fas fa-book-open"></i> Modern dictionary · pronunciation,
+            synonyms &amp; clear audio
+          </div>
+          <form id="searchForm" class="search-form">
+            <div class="search-input-wrapper">
+              <input
+                type="text"
+                id="wordInput"
+                placeholder="e.g., eloquent, serendipity, luminous"
+                autocomplete="off"
+              />
+            </div>
+            <button type="submit"><i class="fas fa-search"></i> Search</button>
+          </form>
+        </div>
+        <div id="resultContainer" class="results-section"></div>
+      </div>
+      <footer class="global-footer">
+        <i class="fas fa-dictionary"></i> Powered by Free Dictionary API ·
+        Created by Antonia · 2026
+        <a
+          href="https://github.com/ToniMoringa"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github"></i> GitHub
+        </a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
